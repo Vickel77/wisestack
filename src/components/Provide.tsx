@@ -33,6 +33,7 @@ export default function Provide() {
         <div className="flex gap-5">
           {services.map(({ icon, body, title }, idx) => (
             <ProvideCard
+              key={idx}
               data-aos="fade-up"
               data-aos-delay={100 * idx}
               icon={icon}

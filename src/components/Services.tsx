@@ -65,6 +65,7 @@ export default function Services() {
             data-aos={idx % 2 === 0 && "fade-up"}
             data-aos-delay={100 * idx}
             service={service}
+            key={idx}
           />
         ))}
       </div>

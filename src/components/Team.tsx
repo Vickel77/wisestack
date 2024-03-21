@@ -29,6 +29,7 @@ export default function Team() {
             service={service}
             data-aos="fade-up"
             data-aos-delay={100 * idx}
+            key={idx}
           />
         ))}
       </div>

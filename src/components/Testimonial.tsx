@@ -89,10 +89,12 @@ export default function Testimonial() {
         </div>
         <div className="w-full flex justify-center">
           <div className="min-w-[40%] p-10 md:w-10  rounded-3xl shadow-xl bg-white relative">
-            <p className="absolute top-3 left-3 text-lg opacity-50">"</p>
+            <p className="absolute top-5 left-5 text-[70px] opacity-25">
+              &quot;
+            </p>
             <Carousel autoplay withoutControls wrapAround>
-              {testimonies.map((testimony) => (
-                <div className=" w-full text-center">
+              {testimonies.map((testimony, idx) => (
+                <div key={idx} className=" w-full text-center">
                   <blockquote className="mb-5 ">{testimony.text}</blockquote>
                   <h5 className="pb-1 text-primary">{testimony.name}</h5>
                   <i className="opacity-50">{testimony.title}</i>

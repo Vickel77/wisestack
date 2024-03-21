@@ -24,8 +24,9 @@ function Navbar() {
         <Logo />
       </div>
       <div className="nav-links">
-        {_navLinks.map((x) => (
+        {_navLinks.map((x, idx) => (
           <Link
+            key={idx}
             className={`px-3 py-7 ${
               pathname === x.path.toLowerCase()
                 ? "border-b-2 border-primary"

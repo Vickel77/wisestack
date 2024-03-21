@@ -1,7 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
-export default function () {
+export default function BannerCTA() {
   return (
     <div className="w-full px-20 p-10 bg-primaryAccent flex justify-between  items-center mt-20 my-10">
       <div>
