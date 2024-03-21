@@ -1,52 +1,44 @@
 import React, { ReactNode } from "react";
-import { FaAddressCard } from "react-icons/fa";
+import { FaAddressCard, FaDollarSign } from "react-icons/fa";
 
 export default function Provide() {
   const services = [
     {
-      icon: <FaAddressCard />,
-      title: "One Time Support",
-      body: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
-              aliquid explicabo cum debitis sint dolore quo quam sit amet
-              inventore ea deleniti quasi, accusamus maxime provident eveniet
-              voluptatem possimus tempore. Expedita soluta quam saepe explicabo
-              voluptate optio odio et! Eligendi ut officiis commodi,
-              reprehenderit nobis nesciunt eos laudantium sint? Quod accusamus
-              eveniet enim perspiciatis, illo ipsum error adipisci debitis in
-              dolores labore recusandae unde? Asperiores odit aut dolorem
-              possimus labore, eveniet tenetur cum est rem expedita similique
-              atque non optio nulla sapiente autem esse nesciunt. Repellendus
-              sint esse, nobis sequi et incidunt exercitationem at veritatis
-              numquam animi, culpa sed fuga!`,
+      icon: <FaAddressCard size={50} color="$1446A0" />,
+      title: "Elevate Your Brand Presence: Our Social Media Magic",
+      body: ` 
+    We specialize in crafting tailored social media strategies that captivate audiences and amplify brand visibility. With our creative flair and data-driven approach, we transform your online presence into a dynamic hub of engagement. .
+    `,
     },
     {
-      icon: <FaAddressCard />,
-      title: "One Time Support",
-      body: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
-              aliquid explicabo cum debitis sint dolore quo quam sit amet
-              inventore ea deleniti quasi, accusamus maxime provident eveniet
-              voluptatem possimus tempore. Expedita soluta quam saepe explicabo
-              voluptate optio odio et! Eligendi ut officiis commodi,
-              reprehenderit nobis nesciunt eos laudantium sint? Quod accusamus
-              eveniet enim perspiciatis, illo ipsum error adipisci debitis in
-              dolores labore recusandae unde? Asperiores odit aut dolorem
-              possimus labore, eveniet tenetur cum est rem expedita similique
-              atque non optio nulla sapiente autem esse nesciunt. Repellendus
-              sint esse, nobis sequi et incidunt exercitationem at veritatis
-              numquam animi, culpa sed fuga!`,
+      icon: <FaDollarSign size={50} color="$1446A0" />,
+      title: "Your Digital Growth Partners: Unleashing Social Potential",
+      body: `At our agency, we don't just manage social media; we unleash its full potential for your brand. Our team of experts dives deep into understanding your business goals, audience demographics,`,
     },
   ];
 
   return (
-    <div className="flex justify-center gap-8">
-      <div className="rounded-md max-w-3 ">
-        <img src="/hero-img.png" alt="" />
+    <div className="w-full flex justify-center  gap-8 mt-[100px] ">
+      <div
+        className="rounded-3xl w-[40%]  overflow-hidden "
+        data-aos="fade-right"
+      >
+        <img src="hero-img.jpg" alt="" />
       </div>
       <div className="flex-col justify-center ">
-        <h2 className="text-center"> We provide unique customized Services </h2>
+        <h2 className="text-left mb-20">
+          {" "}
+          We provide unique customized Value{" "}
+        </h2>
         <div className="flex gap-5">
-          {services.map(({ icon, body, title }) => (
-            <ProvideCard icon={icon} body={body} title={title} />
+          {services.map(({ icon, body, title }, idx) => (
+            <ProvideCard
+              data-aos="fade-up"
+              data-aos-delay={100 * idx}
+              icon={icon}
+              body={body}
+              title={title}
+            />
           ))}
         </div>
       </div>
@@ -62,12 +54,12 @@ interface ItemProps {
 
 const ProvideCard = ({ icon, body, title }: ItemProps) => {
   return (
-    <div className="border-[1px solid black] border-l-2 border-b-2  p-5 ">
+    <div className="  max-w-[400px] border-2 border-r-4 border-b-4 border-black  rounded-lg p-8 ">
       {icon}
 
-      <h3>{title}</h3>
+      <h3 className="my-4">{title}</h3>
 
-      <p>{body}</p>
+      <p className="text-lg">{body}</p>
     </div>
   );
 };

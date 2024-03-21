@@ -3,18 +3,20 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function () {
   return (
-    <div className="w-full p-7 bg-black flex justify-evenly ">
+    <div className="w-full px-20 p-10 bg-primaryAccent flex justify-between  items-center mt-20 my-10">
       <div>
-        <img src="" alt="" />
-      </div>
-      <div className="w-10">
-        <h4 className="text-white">Delivery the best MArketing services</h4>
+        <img src="shield.png" alt="" width={100} />
       </div>
       <div>
-        <button className=" shadow-2xl flex items-center justify-between bg-black  rounded-full px-3 py-3 text-white mt-5">
+        <h3 className=" text-[30px] text-black">
+          Deliver the best Marketing services
+        </h3>
+      </div>
+      <div>
+        <button className=" shadow-2xl flex items-center justify-between bg-primary  rounded-full px-3 py-3 text-white mt-5">
           <p className="pr-5 pl-3 text-xl">Get Started</p>
-          <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-full stroke-black fill-black ">
-            <FaArrowRight color="#333" />
+          <div className="flex items-center justify-center w-10 h-10 bg-black rounded-full stroke-black fill-black ">
+            <FaArrowRight color="#fff" />
           </div>
         </button>
       </div>

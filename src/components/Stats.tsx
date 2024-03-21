@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaAddressCard, FaDollarSign } from "react-icons/fa";
+import { FaAddressCard, FaDollarSign, FaAccusoft } from "react-icons/fa";
 
 type StatInfo = {
   icon: React.JSX.Element;
@@ -10,20 +10,25 @@ type StatInfo = {
 export default function Stats() {
   const statInfo = [
     {
-      icon: <FaAddressCard />,
-      title: "",
-      text: "",
-    },
-
-    {
-      icon: <FaAddressCard />,
-      title: "",
-      text: "",
+      icon: <FaAddressCard size={30} color="#1446A0" />,
+      title: "Unique Selling Proposition (USP):",
+      text: `
+       "Transforming Social Media Complexity into Seamless Success: At WiseStack, we go beyond mere management"
+      `,
     },
     {
-      icon: <FaAddressCard />,
-      title: "",
-      text: "",
+      icon: <FaDollarSign size={30} color="#1446A0" />,
+      title: "Unique Selling Proposition (USP):",
+      text: `
+       "Transforming Social Media Complexity into Seamless Success: At WiseStack, we go beyond mere management"
+      `,
+    },
+    {
+      icon: <FaAccusoft size={30} color="#1446A0" />,
+      title: "Unique Selling Proposition (USP):",
+      text: `
+       "Transforming Social Media Complexity into Seamless Success: At WiseStack, we go beyond mere management "
+      `,
     },
   ];
 
@@ -32,11 +37,11 @@ export default function Stats() {
   const [isActive, setIsActive] = useState<number>(0);
 
   return (
-    <div className="flex gap-8">
-      <div className="md:w-[60%]">
-        <div>
-          <h3>Monthly Reports with statistical Reports</h3>
-          <sub>
+    <div className="flex gap-8 w-full mt-[100px]">
+      <div className="md:w-[100%]">
+        <div className="mb-10">
+          <h2>Why choose us?</h2>
+          <sub className="text-lg ">
             We provide a specific unique package for your marketing needs
           </sub>
         </div>
@@ -46,14 +51,18 @@ export default function Stats() {
               isActive={isActive === idx}
               onClick={() => setIsActive(idx)}
               {...info}
+              key={idx}
+              id={idx}
             />
           ))}
         </div>
       </div>
-      <div className="relative">
+      <div className="relative w-[100%] flex justify-center items-center">
         {/* Using Image as Background */}
         {/* <div className="w-[40% , h-[400px]" style={{ background: `url(${statImages[isActive]})`, backgroundSize:"cover" }}></div> */}
-        <img src={statImages[isActive]} alt="statistics" />
+        <div className="overflow-hidden  rounded-3xl w-[50%] max-h-[60vh]">
+          <img src={statImages[isActive]} alt="statistics" />
+        </div>
       </div>
     </div>
   );
@@ -62,20 +71,21 @@ export default function Stats() {
 const StatInfoCard = ({
   isActive,
   onClick,
+  id,
   ...props
-}: { isActive?: boolean; onClick?: () => void } & StatInfo) => {
+}: { isActive?: boolean; onClick?: () => void; id?: number } & StatInfo) => {
   const { icon, text, title } = props;
   return (
     <div
-      className={`px-6 py-3 rounded-md ${
-        isActive && "bg-primaryAccent"
-      } flex gap-3`}
+      className={`p-5 rounded-xl  ${
+        isActive ? "bg-primaryAccent items-start" : "items-center"
+      } flex gap-3    ${id === 1 && "my-3"}`}
       onClick={onClick}
     >
-      <div className=" h-2 w-2 rounded-full shadow-md bg-white">{icon}</div>
-      <div className="text-left">
-        <h4>{title}</h4>
-        {isActive && <p className="mb-3">{text}</p>}
+      <div className=" flex  p-3 rounded-full shadow-md bg-white">{icon}</div>
+      <div className="text-left ">
+        <h3>{title}</h3>
+        {isActive && <p className="mt-3">{text}</p>}
       </div>
     </div>
   );
