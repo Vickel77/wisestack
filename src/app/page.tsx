@@ -1,6 +1,6 @@
 "use client";
 
-import BAnner from "@/components/Banner";
+import BannerCTA from "@/components/BannerCTA";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Provide from "@/components/Provide";
@@ -28,7 +28,7 @@ export default function Home() {
       <Provide />
       <Services />
       <Stats />
-      <BAnner />
+      <BannerCTA />
       <Testimonial />
       <Team />
       <Footer />
