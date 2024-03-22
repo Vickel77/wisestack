@@ -15,7 +15,7 @@ import { useEffect } from "react";
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      offset: 200,
+      offset: 100,
       duration: 1000,
       once: false,
     });
@@ -23,14 +23,14 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="text-lg flex w-full min-h-screen flex-col items-center justify-between p-24 pt-5 pb-0">
+    <main className=" text-lg flex w-[100vw]  min-h-screen flex-col items-center justify-between md:px-20 px-10  overflow-hidden">
       <Header />
       <Provide />
       <Services />
       <Stats />
       <BannerCTA />
       <Testimonial />
-      <Team />
+      {/* <Team /> */}
       <Footer />
     </main>
   );

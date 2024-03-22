@@ -18,12 +18,12 @@ function Navbar() {
 
   console.log("pathname ", pathname);
   return (
-    <div className="w-full px-5 flex justify-between items-center border-b-2 border-gray-300">
-      <div className="logo">
+    <div className="w-full mt-5 px-5 flex justify-between items-center border-b-2 border-gray-300">
+      <div className="logo md:w-auto w-full md:block flex justify-center">
         {/* Wise<span className="text-primary">Stack </span> */}
         <Logo />
       </div>
-      <div className="nav-links">
+      <div className="nav-links hidden md:block">
         {_navLinks.map((x, idx) => (
           <Link
             key={idx}
@@ -32,14 +32,14 @@ function Navbar() {
                 ? "border-b-2 border-primary"
                 : ""
             }`}
-            onClick={() => console.log("clicked ", x.path)}
+            onClick={() => console.log("clicked ", x.path + " " + pathname)}
             href={`#${x.path}`}
           >
             {x.name}
           </Link>
         ))}
       </div>
-      <div className="cta">
+      <div className="cta hidden md:block">
         <button className="bg-black px-5 py-3 text-white">Contact Us</button>
       </div>
     </div>

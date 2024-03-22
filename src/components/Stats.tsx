@@ -10,21 +10,21 @@ type StatInfo = {
 export default function Stats() {
   const statInfo = [
     {
-      icon: <FaAddressCard size={30} color="#1446A0" />,
+      icon: <FaAddressCard size={30} color="#00C465" />,
       title: "Unique Selling Proposition (USP):",
       text: `
        Transforming Social Media Complexity into Seamless Success: At WiseStack, we go beyond mere management, we're your strategic partner in navigating the dynamic world of social media. With expertly curated content,
       `,
     },
     {
-      icon: <FaDollarSign size={30} color="#1446A0" />,
+      icon: <FaDollarSign size={30} color="#00C465" />,
       title: "Client Support:",
       text: `
        data-driven strategies, and unparalleled client support,
       `,
     },
     {
-      icon: <FaAccusoft size={30} color="#1446A0" />,
+      icon: <FaAccusoft size={30} color="#00C465" />,
       title: "Simplicity in Execution:",
       text: `
       we simplify the complexities of online presence, empowering your brand to thrive in the digital landscape. Trust WiseStack to turn your social media challenges into opportunities for seamless growth and success.
@@ -57,7 +57,7 @@ export default function Stats() {
           ))}
         </div>
       </div>
-      <div className="relative w-[100%] flex justify-center items-center ">
+      <div className="relative w-[100%] justify-center items-center hidden md:flex ">
         {/* Using Image as Background */}
         {/* <div className="w-[40% , h-[400px]" style={{ background: `url(${statImages[isActive]})`, backgroundSize:"cover" }}></div> */}
         <img
@@ -97,7 +97,7 @@ const StatInfoCard = ({
       <div className=" flex  p-3 rounded-full shadow-md bg-white">{icon}</div>
       <div className="text-left ">
         <h3>{title}</h3>
-        {isActive && <p className="mt-3">{text}</p>}
+        {isActive && <p className="mt-3 leading-6">{text}</p>}
       </div>
     </div>
   );
