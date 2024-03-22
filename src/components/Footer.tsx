@@ -9,10 +9,10 @@ import {
 
 export default function Footer() {
   return (
-    <div className="mt-[50px] w-[100vw] min-h-[70vh] ] bg-footer-bg-image bg-cover flex justify-center items-end pb-10 text-white">
+    <div className=" md:text-left text-center md:mt-[50px] mt-0 w-[100vw] min-h-[120vh]  md:min-h-[80vh] ] bg-footer-bg-image bg-cover flex justify-center items-end pb-10 text-white">
       <div className="w-[60%]">
-        <div className="flex justify-between">
-          <ul>
+        <div className="flex  mx-auto flex-wrap gap-3 md:justify-between  justify-center   ">
+          <ul className="md:mb-0 mb-5 w-[50%] md:w-auto">
             <h6>Useful Links</h6>
             <li>
               <a href=""></a>
@@ -24,13 +24,13 @@ export default function Footer() {
               <a href=""></a>
             </li>
           </ul>
-          <ul>
+          <ul className="md:mb-0 mb-5 w-[50%] md:w-auto">
             <h6>Support</h6>
             <li>
               <a href="">Help</a>
             </li>
           </ul>
-          <ul>
+          <ul className="md:mb-0 mb-5 w-[50%] md:w-auto">
             <h6>Resources</h6>
             <li>
               <a href="">Pricing</a>
@@ -39,7 +39,7 @@ export default function Footer() {
               <a href="">Portfolio</a>
             </li>
           </ul>
-          <ul>
+          <ul className="md:mb-0 mb-5 w-[50%] md:w-auto">
             <h6>Company</h6>
             <li>
               <a href="">About</a>
@@ -53,7 +53,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="divide-x-2 divide-white w-full my-10" />
-        <div className="py-5 flex justify-between items-center ">
+        <div className="py-5 flex gap-2 flex-wrap md:justify-between justify-center items-center ">
           <div>Copyright 2024</div>
           <div className="flex gap-3">
             <a href="">

@@ -21,9 +21,9 @@ export default function Team() {
   ];
 
   return (
-    <div className="mt-[100px] max-w-[90%] text-center ">
+    <div className="mt-[200px] w-full  max-w-[90%] text-center justify-center ">
       <h2 className="mb-[120px]">Meet the super Team</h2>
-      <div className="flex flex-wrap gap-7">
+      <div className="flex flex-wrap justify-center md:gap-7 gap-24 ">
         {team.map((service, idx) => (
           <ServiceCard
             service={service}

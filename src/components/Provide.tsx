@@ -18,9 +18,15 @@ export default function Provide() {
   ];
 
   return (
-    <div className="w-full flex justify-center  gap-8 mt-[100px] ">
+    <div className="w-full flex justify-center flex-wrap md:flex-nowrap gap-8 mt-[100px] relative ">
+      <img
+        src="header-dot.png"
+        alt=""
+        width={100}
+        className="absolute left-0 bottom-0"
+      />
       <div
-        className="rounded-3xl w-[45%]  overflow-hidden shadow-lg "
+        className="rounded-3xl w-full md:w-[45%] h-[70vh] overflow-hidden shadow-lg  hidden md:block"
         data-aos="fade-right"
         style={{
           background: "url(prep.jpg)",
@@ -31,11 +37,11 @@ export default function Provide() {
         {/* <img src="prep.jpg" alt="" className="rounded-xl h-[100%] w-[100%]" /> */}
       </div>
       <div className="flex-col justify-center ">
-        <h2 className="text-left mb-20">
+        <h2 className="text-left mb-10">
           {" "}
           We provide unique customized Value{" "}
         </h2>
-        <div className="flex gap-5">
+        <div className="flex flex-wrap md:flex-nowrap gap-5">
           {services.map(({ icon, body, title }, idx) => (
             <ProvideCard
               key={idx}
@@ -63,7 +69,7 @@ const ProvideCard = ({ icon, body, title }: ItemProps) => {
     <div className="  max-w-[400px] border-2 border-r-4 border-b-4 border-black  rounded-lg p-8 ">
       {icon}
 
-      <h3 className="my-4">{title}</h3>
+      <h4 className="my-4">{title}</h4>
 
       <p className="text-lg">{body}</p>
     </div>

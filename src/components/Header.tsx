@@ -15,14 +15,14 @@ function Header() {
   return (
     <div className="w-full ">
       <Navbar />
-      <div className="w-full h-[80vh] sm:h-[auto] flex flex-wrap justify-between items-center ">
-        <div className=" md:w-[50%] sm:w-full sm:pt-10 flex justify-center :items-center">
-          <div className="]">
-            <h1 className="sm:text-center sm:text-center sm:text-[2.5rem]">
+      <div className="w-full lg:h-[70vh] h-[auto] flex flex-wrap justify-between items-center mt-20  ">
+        <div className=" md:w-[50%] w-full pt-10 flex justify-center items-center">
+          <div>
+            <h1 className="text-center text-[2.5rem] md:text-[4rem] md:text-left">
               Marketing Done Smoothly
             </h1>
 
-            <div className="flex items-center gap-3  mt-5 mb-10 ">
+            <div className="flex items-center justify-center md:justify-start gap-3  mt-5 mb-10 ">
               <button
                 data-aos="fade-right"
                 className=" shadow-2xl flex items-center justify-between bg-black  rounded-full px-3 py-3 text-white "
@@ -35,7 +35,7 @@ function Header() {
               <b className="underline">Our Features</b>
             </div>
 
-            <div className="rating flex items-center">
+            <div className="rating flex items-center justify-center md:justify-start">
               <div className="h-20 w-[130px] flex  items-center relative">
                 <img
                   className="absolute border-4 border-background rounded-full"
@@ -71,26 +71,26 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="w-[50%] ms:w-full relative  flex justify-center items-center">
+        <div className="md:w-[50%] w-full relative mt-10 md:mt-0 flex justify-center items-center">
           <div className=" ounded-md  absolute top-2 right-5">
-            <img src="header-dots.png" alt="" width={100} />
+            <img src="_header-dots.png" alt="" width={100} />
           </div>
           <div
             data-aos="fade-down"
-            className="sm:h-auto md:shrink-0 h-[60vh]  w-2/3 bg-cover relative rounded-[200px]  overflow-hidden  shadow-lg flex justify-center items-start header-right-img   "
+            className="h-auto lg:h-[70vh]  w-2/3 bg-cover relative rounded-[200px]  overflow-hidden  shadow-lg flex justify-center md:items-start items-center header-right-img"
           >
             <img src="header-image.jpg" alt="" />
           </div>
           <div
             data-aos="fade-up"
             data-aos-delay={500}
-            className=" shadow-lg rounded-md   absolute sm:-bottom-5 sm:-left-10 bottom-8 -left-3 "
+            className=" shadow-lg rounded-md  absolute  -bottom-5 left-5 md:bottom-8 md:-left-3 "
           >
-            <img src="header-rating.png" alt="" width={150} />
+            <img src="_header-rating.png" alt="" width={150} />
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-between mt-20">
+      <div className="w-full flex justify-between mt-20 px-10 md:px-0">
         {brands.map((brand, idx) => (
           <img
             key={idx}
@@ -98,6 +98,7 @@ function Header() {
             data-aos="fade-in"
             src={brand}
             width={50}
+            className="w-8 md:w-[50px]"
           />
         ))}
       </div>

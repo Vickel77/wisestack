@@ -5,30 +5,29 @@ import Carousel from "nuka-carousel";
 export default function Testimonial() {
   const testimonies = [
     {
-      name: "John Doe",
-      title: "CEO Alumo Bitters",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reprehenderit natus itaque doloribus temporibus labore beatae magni odio, eligendi, distinctio, aliquam voluptas aspernatur officiis.",
+      name: "Joy Omotara",
+      // title: "CEO Alumo Bitters",
+      text: "Wisestack's expertise expanded our online presence, attracting wider audiences. Their dedication and strategy consistently delivered exceptional results.",
     },
     {
       name: "Paris Bowens",
-      title: "Producer",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reprehenderit natus itaque doloribus temporibus labore beatae magni odio, eligendi, distinctio, aliquam voluptas aspernatur officiis.",
+      // title: "Producer",
+      text: "The innovative ideas and data-driven approach keep my business ahead in the digital landscape. Their professionalism and results make them valuable partners.",
     },
     {
-      name: "Smith Jones",
-      title: "CEO Chabod Minstresl",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reprehenderit natus itaque doloribus temporibus labore beatae magni odio, eligendi, distinctio, aliquam voluptas aspernatur officiis.",
+      name: "Larry Gabriel",
+      // title: "CEO Chabod Minstresl",
+      text: "Wisestack's tailored marketing solutions drove significant growth in leads and conversions. Their deep industry understanding sets them apart.",
     },
   ];
 
   return (
-    <div className="w-full text-center mt-[100px]">
+    <div className="w-full text-center mt-[100px] mb-[100px]">
       <div>
         <h2 className="mb-5">What people say about our services</h2>
         <div className=" text-lg flex justify-center ">
           <p className="w-[50%] mb-10">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-            corporis illo earum doloribus voluptatibus obcaecati, repellat
+            Below are some of the feedback gotten from previous clientele
           </p>
         </div>
       </div>
@@ -95,9 +94,11 @@ export default function Testimonial() {
             <Carousel autoplay withoutControls wrapAround>
               {testimonies.map((testimony, idx) => (
                 <div key={idx} className=" w-full text-center">
-                  <blockquote className="mb-5 ">{testimony.text}</blockquote>
+                  <blockquote className="mb-5 leading-6">
+                    {testimony.text}
+                  </blockquote>
                   <h5 className="pb-1 text-primary">{testimony.name}</h5>
-                  <i className="opacity-50">{testimony.title}</i>
+                  {/* <i className="opacity-50">{testimony.title}</i> */}
                 </div>
               ))}
             </Carousel>
