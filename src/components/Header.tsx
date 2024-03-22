@@ -15,10 +15,12 @@ function Header() {
   return (
     <div className="w-full ">
       <Navbar />
-      <div className="w-full h-[80vh] flex justify-between items-center ">
-        <div className=" flex justify-center">
-          <div className="w-full">
-            <h1>Marketing Done Smoothly</h1>
+      <div className="w-full h-[80vh] sm:h-[auto] flex flex-wrap justify-between items-center ">
+        <div className=" md:w-[50%] sm:w-full sm:pt-10 flex justify-center :items-center">
+          <div className="]">
+            <h1 className="sm:text-center sm:text-center sm:text-[2.5rem]">
+              Marketing Done Smoothly
+            </h1>
 
             <div className="flex items-center gap-3  mt-5 mb-10 ">
               <button
@@ -45,7 +47,7 @@ function Header() {
                 />
                 <img
                   className="absolute left-8 border-4 border-background rounded-full"
-                  src="customer-dp.png"
+                  src="testimony1.png"
                   alt=""
                   width={50}
                   data-aos="fade-down"
@@ -53,7 +55,7 @@ function Header() {
                 />
                 <img
                   className="absolute left-16 border-4 border-background rounded-full"
-                  src="customer-dp.png"
+                  src="testimony3.png"
                   alt=""
                   width={50}
                   data-aos="fade-down"
@@ -69,15 +71,23 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="w-[50%] relative">
+        <div className="w-[50%] ms:w-full relative  flex justify-center items-center">
+          <div className=" ounded-md  absolute top-2 right-5">
+            <img src="header-dots.png" alt="" width={100} />
+          </div>
           <div
             data-aos="fade-down"
-            className="h-[60vh] w-2/3 bg-cover relative rounded-[200px]  overflow-hidden  shadow-lg flex justify-center items-start header-right-img   "
+            className="sm:h-auto md:shrink-0 h-[60vh]  w-2/3 bg-cover relative rounded-[200px]  overflow-hidden  shadow-lg flex justify-center items-start header-right-img   "
           >
-            <img src="hero-img.jpg" alt="" />
+            <img src="header-image.jpg" alt="" />
           </div>
-          <div className="h-3 w-3 shadow-md rounded-md  absolute top-8 -left-3 "></div>
-          <div className="h-3 w-3 shadow-md rounded-md absolute top-2 -right-3"></div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay={500}
+            className=" shadow-lg rounded-md   absolute sm:-bottom-5 sm:-left-10 bottom-8 -left-3 "
+          >
+            <img src="header-rating.png" alt="" width={150} />
+          </div>
         </div>
       </div>
       <div className="w-full flex justify-between mt-20">

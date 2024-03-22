@@ -20,10 +20,15 @@ export default function Provide() {
   return (
     <div className="w-full flex justify-center  gap-8 mt-[100px] ">
       <div
-        className="rounded-3xl w-[40%]  overflow-hidden "
+        className="rounded-3xl w-[45%]  overflow-hidden shadow-lg "
         data-aos="fade-right"
+        style={{
+          background: "url(prep.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "50% 50%",
+        }}
       >
-        <img src="hero-img.jpg" alt="" />
+        {/* <img src="prep.jpg" alt="" className="rounded-xl h-[100%] w-[100%]" /> */}
       </div>
       <div className="flex-col justify-center ">
         <h2 className="text-left mb-20">

@@ -1,6 +1,21 @@
 import React from "react";
 
 export default function Portfolio() {
+
+  const portfolioData: PortfolioData[] = [
+    {
+      image: "",
+      subTitle: "",
+      title: "",
+    },
+    {
+      image: "",
+      subTitle: "",
+      title: "",
+    },
+    
+  ];
+
   return (
     <div>
       <div>
@@ -10,10 +25,32 @@ export default function Portfolio() {
           earum nihil suscipit?
         </sub>
       </div>
+      <div>
+
+      </div>
     </div>
   );
 }
 
-const PortfolioCard = () => {};
+interface PortfolioData {
+  image:string,
+  title:string,
+  subTitle:string
+}
+
+const PortfolioCard = ({ item }: { item: PortfolioData }) => {
+  const {image,subTitle,title} = item
+  return (
+    <div className="w-[50%]">
+      <div className="rounded-md overflow-hidden ">
+        <img src={image} alt="" />
+      </div>
+      <div>
+        <h4>{title}</h4>
+        <sub>{subTitle}</sub>
+      </div>
+    </div>
+  );
+};
 
 const FullCard = () => {};

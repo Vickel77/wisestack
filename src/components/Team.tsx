@@ -4,13 +4,13 @@ import { FaCalculator } from "react-icons/fa";
 export default function Team() {
   const team: TeamData[] = [
     {
-      image: "testimony1.png",
-      title: "CJohn Doe",
+      image: "testimony2.png",
+      title: "Jane Doe",
       text: "Designer",
     },
     {
-      image: "testimony2.png",
-      title: "Vin Mokay ",
+      image: "testimony1.png",
+      title: "Vin Mokay",
       text: "CEO",
     },
     {
