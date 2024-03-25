@@ -7,22 +7,22 @@ export default function Testimonial() {
     {
       name: "Joy Omotara",
       // title: "CEO Alumo Bitters",
-      text: "Wisestack's expertise expanded our online presence, attracting wider audiences. Their dedication and strategy consistently delivered exceptional results.",
+      text: "Wisestack's expertise expanded our online presence, attracting wider audiences. ",
     },
     {
       name: "Paris Bowens",
       // title: "Producer",
-      text: "The innovative ideas and data-driven approach keep my business ahead in the digital landscape. Their professionalism and results make them valuable partners.",
+      text: "The innovative ideas and data-driven approach keep my business ahead in the digital landscape. ",
     },
     {
       name: "Larry Gabriel",
       // title: "CEO Chabod Minstresl",
-      text: "Wisestack's tailored marketing solutions drove significant growth in leads and conversions. Their deep industry understanding sets them apart.",
+      text: "Wisestack's tailored marketing solutions drove significant growth in leads and conversions. ",
     },
   ];
 
   return (
-    <div className="w-full text-center mt-[100px] mb-[100px]">
+    <div className="w-full text-center mt-[100px] mb-[50px]">
       <div>
         <h2 className="mb-5">What people say about our services</h2>
         <div className=" text-lg flex justify-center ">
