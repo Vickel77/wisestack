@@ -61,7 +61,7 @@ export default function Stats() {
         {/* Using Image as Background */}
         {/* <div className="w-[40% , h-[400px]" style={{ background: `url(${statImages[isActive]})`, backgroundSize:"cover" }}></div> */}
         <img
-          src="header-dots.png"
+          src="_header-dots.png"
           alt=""
           data-aos="down"
           className="absolute right-20 bottom-0"

@@ -15,12 +15,15 @@ function Header() {
   return (
     <div className="w-full ">
       <Navbar />
-      <div className="w-full lg:h-[70vh] h-[auto] flex flex-wrap justify-between items-center mt-20  ">
+      <div className="w-full lg:h-[70vh] h-[auto] flex flex-wrap justify-between items-center mt-0 md:mt-20  ">
         <div className=" md:w-[50%] w-full pt-10 flex justify-center items-center">
           <div>
             <h1 className="text-center text-[2.5rem] md:text-[4rem] md:text-left">
-              Marketing Done Smoothly
+              WISE<span className="text-primary">STACK</span> SOLUTIONS
             </h1>
+            <sub className="text-2xl">
+              Marketing Done Smoothly<span className="text-6xl">...</span>
+            </sub>
 
             <div className="flex items-center justify-center md:justify-start gap-3  mt-5 mb-10 ">
               <button

@@ -19,7 +19,7 @@ function Navbar() {
   console.log("pathname ", pathname);
   return (
     <div className="w-full mt-5 px-5 flex justify-between items-center border-b-2 border-gray-300">
-      <div className="logo md:w-auto w-full md:block flex justify-center">
+      <div className="logo md:w-auto w-full md:block flex justify-center md:mt-0 mt-32">
         {/* Wise<span className="text-primary">Stack </span> */}
         <Logo />
       </div>
