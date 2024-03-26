@@ -7,7 +7,13 @@ const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "WiseStack",
-  description: "",
+  description: "Elevate Your Brand Presence: Our Social Media Magic",
+  openGraph: {
+    type: "website",
+    description: "Elevate Your Brand Presence: Our Social Media Magic",
+    images:
+      "https://drive.google.com/file/d/1Q4O8kXQIZHXTPa-ZkPaT22vftAZAL0cu/view?usp=drive_link",
+  },
 };
 
 export default function RootLayout({

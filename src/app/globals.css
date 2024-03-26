@@ -19,8 +19,10 @@
   padding: 0;
   margin: 0;
   line-height: 1.1;
+  scroll-behavior: smooth;
 }
 body {
+  scroll-behavior: smooth;
   width: 100vw;
   overflow-x: hidden;
   color: rgb(var(--foreground-rgb));

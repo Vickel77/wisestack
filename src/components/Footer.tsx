@@ -15,19 +15,19 @@ export default function Footer() {
           <ul className="md:mb-0 mb-5 w-[50%] md:w-auto">
             <h6>Useful Links</h6>
             <li>
-              <a href=""></a>
+              <a href="">About</a>
             </li>
             <li>
-              <a href=""></a>
+              <a href="">Contact us</a>
             </li>
             <li>
-              <a href=""></a>
+              <a href="">Service</a>
             </li>
           </ul>
           <ul className="md:mb-0 mb-5 w-[50%] md:w-auto">
             <h6>Support</h6>
             <li>
-              <a href="">Help</a>
+              <a href="mailto:wisestackpromo@gmail.com">Help</a>
             </li>
           </ul>
           <ul className="md:mb-0 mb-5 w-[50%] md:w-auto">
@@ -40,38 +40,40 @@ export default function Footer() {
             </li>
           </ul>
           <ul className="md:mb-0 mb-5 w-[50%] md:w-auto">
-            <h6>Company</h6>
+            <h6>Contact Us</h6>
             <li>
-              <a href="">About</a>
+              <a href="mailto:wisestackpromo@gmail.com">
+                wisestackpromo@gmail.com
+              </a>
             </li>
             <li>
-              <a href="">Contact us</a>
-            </li>
-            <li>
-              <a href="">Service</a>
+              <a href="">Portfolio</a>
             </li>
           </ul>
         </div>
-        <div className="divide-x-2 divide-white w-full my-10" />
+        <div className="divide-x-2 divide-white w-full mt-10 border-t-[1px] border-white" />
         <div className="py-5 flex gap-2 flex-wrap md:justify-between justify-center items-center ">
-          <div>Copyright 2024</div>
+          <div> © Copyright 2024</div>
           <div className="flex gap-3">
-            <a href="">
+            <a className="hover:opacity-80 transition" href="">
               {" "}
               <FaTwitter size={25} />{" "}
             </a>
-            <a href="">
+            <a className="hover:opacity-80 transition" href="">
               {" "}
               <FaFacebook size={25} />{" "}
             </a>
-            <a href="">
+            <a
+              className="hover:opacity-80 transition"
+              href="https://www.instagram.com/wisestack?igsh=M3Q5dm9rOW9heHNu"
+            >
               <FaInstagram size={25} />{" "}
             </a>
-            <a href="">
+            <a className="hover:opacity-80 transition" href="">
               {" "}
               <FaSlack size={25} />{" "}
             </a>
-            <a href="">
+            <a className="hover:opacity-80 transition" href="">
               {" "}
               <FaWhatsapp size={25} />{" "}
             </a>
