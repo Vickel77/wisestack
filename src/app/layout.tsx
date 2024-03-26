@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Quicksand } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 const quicksand = Quicksand({ subsets: ["latin"] });
@@ -23,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </Head>
       <body className={quicksand.className}>{children}</body>
     </html>
   );
