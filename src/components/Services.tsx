@@ -71,7 +71,10 @@ export default function Services() {
   const [showModal, setShowModal] = useState<boolean>(false);
 
   return (
-    <div className="mt-[100px] md:max-w-[90%] w-full  text-center ">
+    <div
+      id="services"
+      className="mt-[100px] md:max-w-[90%] w-full  text-center "
+    >
       <h2 className="mb-20">Services</h2>
       <div className="flex flex-wrap items-center justify-center gap-7">
         {services.map((service, idx) => (

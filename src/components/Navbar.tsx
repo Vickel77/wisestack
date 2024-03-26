@@ -9,9 +9,9 @@ function Navbar() {
   const pathname = usePathname();
   const navLinks = ["Home", "About", "Services", "Portfolio", "Blog"];
   const _navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
+    { name: "Home", path: "home" },
+    { name: "About", path: "about" },
+    { name: "Services", path: "services" },
     { name: "Portfolio", path: "/portfolio" },
     { name: "Blog", path: "/blog" },
   ];

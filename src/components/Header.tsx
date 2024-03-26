@@ -16,26 +16,30 @@ function Header() {
     <div className="w-full ">
       <Navbar />
       <div className="w-full lg:h-[70vh] h-[auto] flex flex-wrap justify-between items-center mt-0 md:mt-20  ">
-        <div className=" md:w-[50%] w-full pt-10 flex justify-center items-center">
+        <div className=" md:w-[50%] w-full pt-10 flex justify-between items-center">
           <div>
             <h1 className="text-center text-[2.5rem] md:text-[4rem] md:text-left">
-              WISE<span className="text-primary">STACK</span> SOLUTIONS
+              Wise<span className="text-primary">Stack</span> <br /> Solution
             </h1>
             <sub className="text-2xl">
               Marketing Done Smoothly<span className="text-6xl">...</span>
             </sub>
 
             <div className="flex items-center justify-center md:justify-start gap-3  mt-5 mb-10 ">
-              <button
-                data-aos="fade-right"
-                className=" shadow-2xl flex items-center justify-between bg-black  rounded-full px-3 py-3 text-white "
-              >
-                <p className="pr-5 pl-3 text-xl">Get Started</p>
-                <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-full stroke-black fill-black ">
-                  <FaArrowRight color="#fff" />
-                </div>
-              </button>
-              <b className="underline">Our Features</b>
+              <a href="mailto:wisestackpromo@gmail.com">
+                <button
+                  data-aos="fade-right"
+                  className=" transition-all shadow-2xl flex items-center justify-between bg-black  rounded-full px-3 py-3 text-white "
+                >
+                  <p className="pr-5 pl-3 text-xl">Get Started</p>
+                  <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-full stroke-black fill-black ">
+                    <FaArrowRight color="#fff" />
+                  </div>
+                </button>
+              </a>
+              <a href="#services">
+                <b className="underline">Our Features</b>
+              </a>
             </div>
 
             <div className="rating flex items-center justify-center md:justify-start">
@@ -93,7 +97,10 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-between mt-20 px-10 md:px-0">
+      <div
+        id="about"
+        className="w-full flex justify-between mt-20 px-10 md:px-0"
+      >
         {brands.map((brand, idx) => (
           <img
             key={idx}

@@ -18,7 +18,10 @@ export default function Provide() {
   ];
 
   return (
-    <div className="w-full flex justify-center flex-wrap md:flex-nowrap gap-8 mt-[100px] relative ">
+    <div
+      id="about"
+      className="w-full flex justify-center flex-wrap md:flex-nowrap gap-8 mt-[100px] relative "
+    >
       <img
         src="header-dot.png"
         alt=""
